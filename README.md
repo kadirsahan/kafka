@@ -6,11 +6,16 @@ docker-compose up -d
 
 docker exec -it kafka-docker_kafka_1 bash
 
-kafka-topics.sh --create --bootstrap-server localhost:9092 --replication-factor 1 --partitions 1 --topic test
+cd /opt/kafka/bin
 
-kafka-topics.sh --list --bootstrap-server localhost:9092
 
-kafka-console-producer.sh --broker-list localhost:9092 --topic test
+./kafka-topics.sh --create --bootstrap-server localhost:9092 --replication-factor 1 --partitions 1 --topic test
 
-kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic test --from-beginning
+./kafka-topics.sh --list --bootstrap-server localhost:9092
+
+./kafka-console-producer.sh --broker-list localhost:9092 --topic test
+
+./kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic test --from-beginning
+
+./kafka-producer-perf-test.sh   --topic test   --num-records 50000   --record-size 100   --throughput -1   --producer-props acks=1   bootstrap.servers=localhost:9092   buffer.memory=67108864   batch.size=1000
 
