@@ -22,16 +22,6 @@ cd /opt/kafka/bin
 *** kafka streams - ksql - ksqldb ***
 ➜  ~ docker ps
 
-|NAMES|
-
-|ksqldb-cli|
-|ksqldb-server|
-|kafka-connect|
-|schema-registry
-kafka
-postgres
-zookeeper
-
 | __NAMES__ |
 |--------------|
 | ksqldb-cli |
