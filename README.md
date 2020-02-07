@@ -41,7 +41,7 @@ zookeeper
 | kafka |
 | postgres 
 | zookeeper |
-/
+
 
 
 
