@@ -32,11 +32,16 @@ kafka
 postgres
 zookeeper
 /***
-| __Animals__ | __Sports__ | __Fruits__ |
-|-------------|------------|------------|
-| Cat         | Soccer     | Apple      |
-| Dog         | Basketball | Orange     |
-***/
+| __NAMES__ |
+|--------------|
+| ksqldb-cli |
+| ksqldb-server |
+| kafka-connect  |
+| schema-registry |
+| kafka |
+| postgres 
+| zookeeper |
+/
 
 
 
