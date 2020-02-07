@@ -26,12 +26,17 @@ cd /opt/kafka/bin
 
 |ksqldb-cli|
 |ksqldb-server|
-kafka-connect
-schema-registry
+|kafka-connect|
+|schema-registry
 kafka
 postgres
 zookeeper
-
+/***
+| __Animals__ | __Sports__ | __Fruits__ |
+|-------------|------------|------------|
+| Cat         | Soccer     | Apple      |
+| Dog         | Basketball | Orange     |
+***/
 
 
 
