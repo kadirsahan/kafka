@@ -31,7 +31,7 @@ cd /opt/kafka/bin
 kafka
 postgres
 zookeeper
-/***
+
 | __NAMES__ |
 |--------------|
 | ksqldb-cli |
