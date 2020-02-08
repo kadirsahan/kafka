@@ -41,3 +41,9 @@ docker exec -it ksqldb-cli bash
 
 ksql http://ksqldb-server:8088
 
+
+in zookeeper
+
+kafka-topics --zookeeper localhost:2181 --create --partitions 1 --replication-factor 1 --topic USERS
+
+
