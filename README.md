@@ -56,3 +56,6 @@ in another session
 
 kafka-console-producer --broker-list localhost:9092 --topic USERACCOUNTS
 
+CREATE STREAM users (userid INT, firstname VARCHAR, lastname VARCHAR)  WITH (VALUE_FORMAT = 'DELIMITED', KAFKA_TOPIC = 'USERS');
+
+CREATE STREAM users_accounts (accountid INT, userid INT, accountname VARCHAR, balance VARCHAR)  WITH (VALUE_FORMAT = 'DELIMITED', KAFKA_TOPIC = 'USERACCOUNTS');
